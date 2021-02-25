@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-wrapper{
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	position: relative;
+}
+/* leftbar */
+li{
+    list-style: none;
+}
+.leftbar li a,.leftbar li a:active,.leftbar li a:visited{
+    text-decoration: none;
+    color: white;
+}
+.leftbar{
+	position:fixed;
+	top:110px;
+	left:0;
+    width: 280px;
+    height: 100vh;
+    background-color: rgb(108, 173, 78);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+
+	
+}
+
+
+.leftbar ul{
+    width: 100%;
+    margin-top:20%;
+    margin-bottom: 252px;
+    
+}
+.leftbar li::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.leftbar ul li{
+    font-size: 30px;
+    letter-spacing: 10px;
+    height: 70px;
+    font-weight: 600;
+    cursor: pointer;
+}
+li span{
+    vertical-align: middle;
+}
+.leftbar ul li:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+    letter-spacing: 12px;
+    border-left: 10px solid rgb(219, 110, 36);
+}
+/* leftbar */
+
+.member-cont{
+    box-sizing: border-box;
+    padding: 30px 50px;
+    width: 60%;
+    margin-left: 280px;
+    min-height: 100vh;
+
+}
+.work-area{
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    padding:10px 50px;
+    border: 1px solid rgb(207, 195, 187);
+    border-right:30px solid rgb(97, 97, 97) ;
+    
+}
+.work-area h2{
+    color: rgb(75, 75, 75);
+    margin-bottom: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+.work-area p{
+    margin-bottom: 80px;
+}
+.text-box{
+    margin: 30px 0;
+}
+.text-box input{
+    outline: none;
+    margin-left: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    line-height: 2em;
+    border: 1px solid rgb(207, 195, 187);
+    transition: 0.5s;
+    width: 250px;
+}
+.text-box input:focus{
+    border-bottom: 4px solid rgb(108, 173, 78);
+    width: 280px;
+}
+.text-box .selector-gender input{
+    width: 20px;
+}
+.btn-area{
+    margin-top: 100px;
+}
+#send{
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    line-height: 2em;
+    border: 1px solid rgb(207, 195, 187);
+    transition: 0.5s;
+    width: 250px;
+}
+#send:hover{
+    background-color: rgb(226, 226, 226);
+}
+.err{
+    color: rgb(219, 102, 102);
+    margin-left: 10px;
+}

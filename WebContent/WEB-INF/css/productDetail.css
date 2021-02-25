@@ -1,0 +1,317 @@
+a:hover{
+		text-decoration: none;
+		color:black !important;
+	}
+.container{
+    background-color: white;
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px ; 
+}
+.col-2{
+    min-width: 300px;
+    box-sizing: border-box;
+}
+.imgcontainer{
+    margin-top: 20px;
+    width: 350px;
+    height: 500px;
+    position: relative;
+    margin-right: 50px;
+}
+.imgcontainer img{
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.col-2 h1{
+    font-size: 30px;
+    line-height: 62px;
+    margin: 25px 0;
+}
+.row{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: nowrap; 
+    border-bottom: 10px solid rgb(155, 155, 155);
+}
+.col-8{
+    position: relative;
+    min-height: 620px;
+    max-width: 880px;
+}
+.col-8 .title{
+    font-size: 40px;
+    padding-left: 10px;
+    border-left: 6px solid rgb(90, 192, 81);
+    margin-bottom: 20px;
+}
+.col-8 .price{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.col-8 .stock{
+    font-size: 18px;
+}
+
+.btnninput{
+	display:inline-block;
+	margin-top:10px;
+    height: 30px;
+    width: 100%;
+    min-width: 101px;
+    overflow: hidden;
+}
+input{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+#qtyAdd ,#qtyMinus{
+    width: 28px;
+    height: 30px;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    background-color: rgb(250, 242, 242);
+    font-weight: normal;
+    border: none;
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+#qtyAdd:hover ,#qtyMinus:hover{
+    background-color: rgb(62, 196, 91);
+    color: white;
+}
+.actionbutton{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    
+}
+.actionbutton button{
+    width: 200px;
+    height: 50px;
+    font-size: 23px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.actionbutton .add2Cart{
+    border: rgb(62, 196, 91) 1px solid;
+    background: none;
+}
+.actionbutton .add2Cart:hover{
+    background: rgb(62, 196, 91);
+    border: none;
+    color: white;
+}
+.actionbutton .check{
+    background: rgb(62, 196, 91);
+    color: white;
+}
+.actionbutton .check:hover{
+    background: rgb(221, 121, 63);
+    color: white;
+}
+.dis-area{
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.discript-title{
+	margin-top:20px;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.dis-area p{
+    font-size: 18px;
+}
+.more-product{
+    width: 100%;
+    padding: 0 300px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+.more-product h3{
+    font-size: 35px;
+    margin-top: 15px;
+    text-align: center;
+}
+.product-show{
+    width: 100%;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.product-show .each-product{
+    width: 200px;
+    height: 240px;
+    text-align: center;
+    margin: 10px auto;
+    
+}
+.product-show .img-con{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #F2E9E4;
+    margin: 10px auto;
+    position: relative;
+}
+.img-con img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-height: 100%;
+}
+.slick-center{
+    border: none !important;
+   
+}
+.gradecontent{
+	width:100%;
+	box-sizing: border-box;
+	padding:0 100px;
+	margin-bottom:80px; 
+}
+.gradecontent .cust-grade{
+	width:100%;
+	padding: 0 60px;
+	box-sizing: border-box;
+}
+.cust-grade .grade-title{
+	width:100%;
+	height: 60px;
+	box-sizing: border-box;
+	display: flex;
+	align-content: center;
+	background: #F2E9E4;
+	padding-left: 15px;
+	padding-top: 10px;
+	color:#888382 ;
+}
+.grade-title h2{
+	font-size: 32px;
+	background: white;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	padding-left:20px; 
+	padding-right:20px; 
+	border-top-left-radius:5px; 
+	border-top-right-radius:5px; 
+	border-top:5px solid coral;
+}
+.each-grade{
+	width:100%;
+	margin: 20px 0;
+	border-bottom: 1px solid #F2EDEA;
+	box-sizing: border-box;
+	padding: 0 30px;
+}
+.account,.grade,.grade-content{
+	margin: 10px 0;
+	width:100%;
+}
+.grade-content{
+	margin-bottom: 20px;
+}
+.grade i{
+	color: #F65836;
+}
+.gen-grade{
+	width:100%;
+	margin: 20px 0;
+	box-sizing: border-box;
+	padding: 0 30px;
+	min-height:200px; 
+}
+.text-area{
+	width:100%;
+	border: 1px solid #C1B6B4;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	background: #FAFAFA ;
+}
+.score_star{
+	margin-bottom: 10px;
+}
+.fa-star-o{
+	cursor: pointer;
+	color:#858484 ;
+}
+textarea{
+	outline: none;
+	border: none;
+	font-size: 20px;
+	background: none;
+}
+#grade-button{
+	float: right;
+	margin: 20px 0;
+	outline: none;
+	width:100px;
+	font-size: 20px;
+}
+i.star-selected{
+	color: #FC6E55 ;
+}
+
+@media (max-width:1640px){
+    .more-product{
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;
+        margin-bottom: 80px;
+    }
+}
+@media (max-width:1400px){
+	.gradecontent .cust-grade{
+	width:100%;
+	padding: 0 ;
+}
+}
+@media (max-width:1200px){
+    .more-product{
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:680px){
+    .actionbutton{
+        position: absolute;
+        width: 100%;
+        bottom: 1px;
+        display: inline-block;
+        text-align: center;
+    }
+    .actionbutton button{
+        display: inline-block;
+        width: 45%;
+        height: 50px;
+        font-size: 23px;
+        border: none;
+        outline: none;
+    }
+    .more-product{
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+}

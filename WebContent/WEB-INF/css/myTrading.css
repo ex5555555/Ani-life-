@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.page-wrapper{
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	position: relative;
+}
+/* leftbar */
+li{
+    list-style: none;
+}
+.leftbar li a,.leftbar li a:active,.leftbar li a:visited{
+    text-decoration: none;
+    color: white;
+}
+.leftbar{
+	position:fixed;
+	top:110px;
+	left:0;
+    width: 280px;
+    height: 100vh;
+    background-color: rgb(108, 173, 78);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+
+	
+}
+
+
+.leftbar ul{
+    width: 100%;
+    margin-top:20%;
+    margin-bottom: 252px;
+    
+}
+.leftbar li::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.leftbar ul li{
+    font-size: 30px;
+    letter-spacing: 10px;
+    height: 70px;
+    font-weight: 600;
+    cursor: pointer;
+}
+li span{
+    vertical-align: middle;
+}
+.leftbar ul li:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+    letter-spacing: 12px;
+    border-left: 10px solid rgb(219, 110, 36);
+}
+/* leftbar */
+a,a:active,a:visited{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+.list-container{
+    width: 80%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-left: 280px;
+    min-height: 100vh;
+}
+.list-bar{
+    width: 100%;
+    height: 50px;
+    font-size: 35px;
+    border-bottom: 5px solid rgb(243, 123, 42);
+    margin-bottom: 30px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    color: rgb(63, 61, 61);
+    padding-bottom: 10px;
+}
+.trading-list{
+    width: 100%;
+    
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.each-trading{
+	border: 1px solid rgb(207, 195, 187);
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.trading-record{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(207, 195, 187);
+    padding: 8px 0;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    color: rgb(100, 100, 100);
+    font-weight: 600;
+}
+.datenstatus{
+    display: flex;
+}
+.datenstatus .status{
+    margin-left: 20px;
+}
+.trading-detail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(223, 217, 214); 
+}
+.imgndescript{
+    display: flex;
+    align-items: center;
+}
+.img-container{
+    width: 120px;
+    height:120px;
+    position: relative;
+    margin-right: 30px;
+}
+ .img-container img{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+}
+.trading-detail .product-name{
+    width: 100%;
+}
+.trading-total{
+    width: 100%;
+    height: 50px;
+    text-align: end;
+    font-size: 30px;
+   margin-top: 20px;
+   font-weight: 600;
+   color: rgb(226, 112, 67);
+}
+.each-trading .btn{
+    width: 100%;
+    text-align: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn button{
+    background: none;
+    height: 45px;
+    outline: none;
+    font-size: 20px;
+    width: 210px;
+    cursor: pointer;
+    border: 1px solid rgb(236, 121, 43);
+    color:rgb(236, 121, 43) ;
+    background-color: white;
+    border-radius: 5px;
+}
+.btn button:hover{
+    background-color: rgb(248, 130, 51);
+    color: white;
+}
+.detail-info{
+    width: 100%;
+    border: 1px solid rgb(207, 195, 187);
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #F4F2F2;
+}
+.detail-info div{
+	margin:10px 0;
+	color: rgb(100, 100, 100);
+	font-size: 23px;
+	font-weight: 600;
+}
+.btn .selected{
+    background-color: rgb(248, 130, 51);
+    color: white;
+}
+.go-grade{
+	
+}
+.go-grade .price{
+	text-align: right;
+}
+#gograde-btn{
+	height: 45px;
+    outline: none;
+    font-size: 20px;
+    width: 210px;
+    cursor: pointer;
+	border:0;
+}

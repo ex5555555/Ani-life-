@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+.order-content{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    min-width: 800px;
+
+}
+.order-content h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+    
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+}
+.icon{
+    width: 100%;
+}
+.icon-container{
+    width: 70px;
+    height: 70px;
+    margin: 5px auto;
+    position: relative;
+}
+.icon-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+.trading-record,.trading-detail{
+    margin: 0 auto;
+    width: 80%;
+    border-top: 3px solid rgb(194, 194, 194);
+    margin-bottom: 10px;
+}
+.order-content .trading-record{
+    height:70px;
+    border: none;
+    text-align: center;
+}
+.record-content{
+    margin: 30px auto;
+    font-size: 23px;
+}
+
+.order-content .trading-detail{
+    min-height:200px;
+}
+
+.trading-detail ul{
+    width: 90%;
+    margin: 20px auto;
+}
+.trading-detail ul li{
+    width: 100%;
+    font-size: 25px;
+    margin: 8px 0;
+    line-height: 45px;
+    margin: auto 20px;
+}
+.trading-detail ul li:nth-child(even){
+    background-color: rgb(231, 231, 231);
+}
+ul li div{
+    display: inline-block;
+    width:15%;
+    box-sizing: border-box;
+    text-align: right;
+}
+ul li .qty{
+    width:8%;
+}
+ul .shipping{
+    text-align: right;
+    padding-right: 10px;
+}
+
+ul li div:first-child{
+    width: 75%;
+    box-sizing: border-box;
+    min-width:590px ;
+    text-align: left;
+}
+.trading-detail .total{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(95, 95, 95);
+    margin-bottom: 20px;
+    
+}
+.total h3{
+    margin-right: 20px;
+}
+.btn-class{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-class button{
+    width: 60%;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(93, 201, 60);
+    color: white;
+}
+.btn-class button:hover{
+    background-color: rgb(51, 50, 50);
+}

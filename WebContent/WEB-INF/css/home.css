@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    cursor: pointer;
+    
+}
+p{
+    font-weight: 300;
+}
+li{
+    list-style: none;
+}
+body{
+    min-width: 100%;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    justify-content:flex-start;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(170, 175, 204, 0.822);
+    background-blend-mode: multiply;
+}
+.banner .content{
+    max-width: 900px;
+    margin-left: 100px;
+}
+.banner .header-imgcontainer{
+    	width: 100%;
+    	position: relative;
+    	height: 120px;
+    	margin-bottom: 10px;
+}
+.banner .header-imgcontainer img{
+    	position: absolute;
+    	max-height: 100%;
+    	top:0;
+    	left: 0;
+}
+.banner .content h2{
+    font-size: 1.3em;
+    color: white;
+    letter-spacing:4px;
+    margin-bottom: 15px;
+
+}
+.banner .content p{
+    font-size: 1em;
+    color: white;
+    margin-bottom: 20px;
+}
+.btn{
+    font-size: 1.3em;
+    width:200px;
+    height: 3em;
+    outline: none;
+    color: white;
+    background: rgba(31, 190, 84, 0.726);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 14px 0;
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: 600;
+}
+#login{
+    background: rgba(252, 71, 71, 0.726);
+}
+#login i{
+    color: white;
+}
+
+#login:hover{
+    background: white;
+    color: tomato;
+}
+.logout{
+background-color: Transparent;
+border-style: none; /* 無邊框 */
+outline: none; /* 獲得焦點也無邊框 */
+}
+
+.logout:hover{
+background: white;
+color: tomato;
+cursor: pointer;
+}
+
+.btn i{
+    margin-left: 2px;
+    color: rgba(31, 190, 84, 0.726);
+}
+.btn:hover{
+    letter-spacing: 5px;
+    background: rgb(255, 255, 255);
+    color: rgb(99, 98, 98);
+}
+header{
+    position: fixed;
+    top: 0;
+    left:0 ;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+header.sticky{
+    background-color: white;
+    padding: 5px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+
+header .logo{
+    color: rgba(255, 255, 255, 0);
+    font-weight: 700;
+    font-size: 2em;
+}
+header.sticky .logo{
+    color: black !important;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation a{
+    text-decoration: none;
+    color: white;
+}
+header.sticky .navigation a{
+    color: black;
+}
+
+header .navigation li:hover{
+    color: rgb(74, 202, 49);
+}
+.discuss-area{
+    padding: 100px;
+    box-sizing: border-box;
+}
+.discuss-area .title{
+	font-weight:600;
+    font-size: 50px;
+    color: rgb(82, 82, 82);
+    border-bottom: 10px solid rgb(75, 180, 136);
+}
+.articleList{
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.articleList a{
+    text-decoration: none;
+    color: black;
+}
+.articleList li{
+    min-width: 100%;
+    border-left: gray 20px solid;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 15px 0;
+}
+
+.articleList li:hover{
+    border-left: rgb(241, 72, 50) 20px solid;
+    box-shadow:0 0 10px rgba(128, 128, 128, 0.486);
+}
+.articleList .eachArticle {
+	padding: 10px;
+}
+.articleList .eachArticle h3{
+    font-size: 32px;
+}
+.articleList .eachArticle p{
+    font-size: 1.2em;
+    margin-top: 10px;
+    position: relative;
+    line-height: 1.5em;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.articleList .eachArticle small{
+    color: rgb(165, 165, 165);
+}
+.gotochat{
+    width: 100%;
+    text-align: center;
+    margin-bottom:20px ;
+    margin-top:50px ;
+}
+.gotochat button{
+    outline: none;
+    border: 0;
+    font-size: 30px;
+    letter-spacing: 5px;
+    width: 60%;
+    height: 60px;
+    font-weight: 600;
+    background-color:  rgb(64, 199, 104);
+    color: whitesmoke;
+    cursor: pointer;
+} 
+.gotochat button:hover{
+    background-color:  rgb(35, 175, 77);
+}
+
+.product-area{
+    padding: 20px 80px;
+    min-height:100vh;
+    box-sizing: border-box;
+	border-bottom: 50px solid #423D3D;
+}
+.product-area .title{
+	font-weight:600;
+    font-size: 50px;
+    color: rgb(82, 82, 82);
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*
+.product-area h2::before,
+.product-area h2::after{
+    display: inline-block;
+    content: "";
+    width: 40%;
+    height:1px;
+    background-color: #838487;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}*/
+
+
+
+.eachproduct{
+    padding: 10px 5px;
+    width: 250px;
+    height: 300px;
+    margin: 30px 20px;
+    min-width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    border: rgb(224, 224, 224) 1px solid;
+    box-shadow: 0 0 4px rgb(221, 221, 221);
+     transition: 0.5s;
+     border-bottom:10px solid #FC8B58; 
+    
+}
+.eachproduct p{
+	 line-height: 1.5em;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.eachproduct:hover{
+	margin-top: 25px;
+	border-bottom:20px solid #FC8B58; 
+}
+.product-page a{
+	text-decoration: none;
+	color:#393939;
+}
+.pimg-container{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.pimg-container img{
+    max-height: 100%;
+    left:50%;
+    top: 0;
+    transform: translate(-50%);
+    position: absolute;
+    object-fit: cover;
+}
+
+.gotoShop{
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+.gotoShop button{
+    outline: none;
+    border: 0;
+    font-size: 30px;
+    letter-spacing: 5px;
+    width: 60%;
+    height: 60px;
+    transition:0.3s;
+    border:3px solid  #FC8B58;
+    background:none;
+    color: #FC8B58;
+    cursor: pointer;
+} 
+
+.gotoShop button:hover{
+	border:none;
+    background-color: #FC8B58;
+    color:white;
+}
+
+.map-area{
+    box-sizing: border-box;
+    border-bottom:50px solid #242222;
+    height: 100vh;
+}
+.map-area .map-title{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+.map-title .all-info{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.map-area .map-title h2{
+    font-size: 50px;
+    padding: 10px 10px;
+    border-bottom: rgba(255, 255, 255, 0.753) 6px solid;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.map-title .fa-hospital-o{
+	font-size: 40px;
+	margin-left: 10px;
+}
+.all-info .content p{
+	 font-weight: 600;
+	 font-size: 25px;
+}
+.gobtn button{
+    outline: none;
+    border: 1px rgb(233, 233, 233) solid;
+    font-size: 1.2em;
+    color: rgb(233, 233, 233);
+    width: 200px;
+    height: 50px;
+    background-color: rgba(145, 145, 145, 0.527);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s;
+}
+#hbtn:hover{
+    background-color: rgba(131, 91, 226, 0.877);
+    border: 1px  rgba(143, 105, 233, 0.753) solid;
+    width: 220px;
+}
+
+
+@media(max-width:1300px){
+    .product-area h2::before,
+     .product-area h2::after{
+        width: 35%;
+    }
+}
+
+@media(max-width:991px){
+    header,header.sticky{
+        padding: 10px 20px;
+    }
+    .banner .content{
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+    .banner .content p{
+        margin-bottom: 5px;
+    }
+    .product-area h2::before,
+     .product-area h2::after{
+        width: 25%;
+    }
+
+}
+
+@media(max-width:680px){
+    .product-area h2::before,
+     .product-area h2::after{
+        width: 18%;
+    }
+    .product-area .category{
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

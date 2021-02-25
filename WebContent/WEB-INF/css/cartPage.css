@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    button{
+    	outline:none;
+    }
+    ul{
+        list-style: none;
+    }
+	a:hover{
+		text-decoration: none;
+		color:white;
+	}
+    header{
+        z-index: 2;
+        width: 100%;
+        height: 110px;
+        padding: 25px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+        box-sizing: border-box;
+        background-color: rgb(248, 248, 248);
+       
+    }
+    header.sticky{
+        position: fixed;
+        top: 0;
+        left:0 ;
+        background-color: white;
+        padding: 10px 100px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        box-sizing: border-box;
+    }
+
+    header .logo{
+        color: rgb(20, 20, 20);
+        font-weight: 700;
+        font-size: 2em;
+    }
+    header.sticky .logo{
+        color: black !important;
+    }
+
+    header .menu-bar{
+        width: 50%;
+        float: right;
+        box-sizing: border-box;
+        
+    }
+
+    header .menu-bar ul{
+        display: inline-flex;
+        float: right;
+        margin:auto 5px;
+    }
+    .menu-bar ul li{
+        border-left: 1px solid #fff;
+        padding: 15px 20px;
+        text-align: center;
+        cursor: pointer;
+        min-width: 90px;
+        position: relative;
+    }
+
+    .menu-bar ul li:hover{
+        background-color: rgb(71, 189, 91) ;
+    }
+    .menu-bar ul #cart-con:hover{
+        background-color: rgba(71, 189, 91, 0);
+        color:tomato;
+    }
+
+    .menu-bar ul li i{
+        font-size: 25px;
+        margin-right: 5px;
+    }
+    .menu-bar ul li ul{
+        position: absolute;
+        left: 0;
+        display: block;
+        margin-top: 18px;
+        width: 200px;
+        padding: 0;
+        background-color: rgb(71, 189, 91);
+    }
+    .menu-bar ul li ul li{
+        text-align: left;
+        border: none;
+        border-bottom: white 1px solid;
+        font-weight: 550;
+    }
+    .menu-bar ul li ul li:hover{
+        background-color: rgb(209, 102, 53);
+        color: white;
+    }
+    header .navigation{
+        position: relative;
+        display: flex;
+        
+    }
+    header .navigation li{
+        list-style: none;
+        margin-left: 30px;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    header.sticky .navigation a{
+        color: black;
+    }
+
+    header .navigation li:hover{
+        color: rgb(74, 202, 49);
+        overflow: hidden;
+    }
+
+    .wrapper{
+        min-height: 150%;
+    }
+    #logout,#login{
+        outline: none;
+        background: none;
+        border: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .logout{
+    	outline:none;
+    	border: none;
+    	background: none;
+    }
+    .logout:hover{
+        color: white;
+    }
+  
+    
+.mycart{
+    margin: 80px auto ;
+    
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-info p{
+    vertical-align: middle;
+}
+
+.img-container{
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+img{
+    max-height: 100%;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: #1dc038;
+    font-weight: normal;
+    line-height: 50px;
+    font-size: 25px;
+}
+#cartTable td{
+    padding: 30px 5px;  
+}
+
+#delAction {
+    text-align: center;
+    font-size: 25px;
+    
+}
+#delAction button {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    margin: 0;
+    
+}
+.fa-trash{
+    color: rgb(231, 231, 231);
+}
+
+td input{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+.btnninput{
+    height: 31.5px;
+    width: 102px;
+    min-width: 101px;
+    border: rgb(211, 211, 211) 0.5px solid;
+}
+.qtyAdd ,.qtyMinus{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    background-color: rgb(204, 204, 204);
+    font-weight: normal;
+    border: none;
+    color: gray;
+    
+}
+.total-price{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top:3px solid #1dc038;
+    width: 100%;
+    max-width: 350px;
+}
+.total-price table tr td{
+    height: 80px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.check{
+    outline:none;
+    border: none;
+    width: 200px;
+    height: 50px;
+}
+
+.check:hover,.check:active{
+    background-color:  #1dc038;
+    color: white;
+}
+a,a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover,a:active{
+    text-decoration: none ;
+    color:white;
+}
+.logo:hover{
+	 color:#1dc038;
+}
+button{
+	border:none;
+}
+#back2shop{
+	background-color:  #1dc038;
+	color: white;
+}
+#backToshop{
+	background-color:  #1dc038;
+	width:100%;
+	color: white;
+}
+.page-wrapper{
+	min-width:100%;
+}
+@media (max-width:1350px){
+        header{
+            padding: 25px 50px;
+        }
+        .menu-bar{
+            width: 50%;
+        }
+        .menu-bar ul{
+            margin: 10px 0;
+            width: 100%;
+        }
+        .menu-bar ul li{
+            width: 100%;
+
+        }
+        .sum-btn{
+        width: 100%;
+        text-align: end;
+        }
+        .sum-btn h3::before{
+        content: "";
+        width: 80%;
+        height: 2px;
+        background-color: rgb(255, 124, 84);
+        display: inline-block;
+        margin-right: 5px;
+        }
+    }
+
+    @media (max-width:1300px){
+        header{
+            padding: 25px 50px;
+        }
+        .menu-bar{
+            width: 55%;
+        }
+        .menu-bar ul{
+            margin: 10px 0;
+            width: 100%;
+        }
+        .menu-bar ul li{
+            width: 100%;
+
+        }
+    }

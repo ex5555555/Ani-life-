@@ -1,0 +1,555 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ ul{
+        list-style: none;
+    }
+button{
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+a,a:active,a:visited{
+    text-decoration: none;
+    color: black;
+}
+.header-background{
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.category-select{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-color: rgb(48, 47, 47);
+    
+}
+.category-select button{
+    background: none;
+    color: rgb(216, 216, 216);
+    font-size: 21px;
+    font-weight: 600;
+    width: 10%;
+    height: 60px;
+    min-width: 180px;
+    transition: 0.3s;
+}
+#create-forum{
+    background-color: rgb(216, 216, 216);
+    color: rgb(63, 63, 63);
+}
+
+#create-forum:hover{
+    background-color: rgb(93, 209, 102);
+    color: rgb(63, 63, 63);
+}
+.category-select button:hover{
+    border-bottom: 5px solid rgb(177, 177, 177);
+    background-color: rgb(206, 206, 206);
+    color: rgb(63, 63, 63);
+    width: 12%;
+    letter-spacing: 6px;
+}
+.big-container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 90px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-class{
+    width: 20%;
+}
+.btn-class button{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.btn-class button:hover{
+    background-color: rgb(77, 77, 77);
+    color: white;
+    font-weight: 600;
+}
+.btn-sticky{
+    position: fixed;
+    width: 20%;
+    top: 120px;
+    right:5px;
+    margin: 0 !important;
+}
+.dis-container{
+    width: 80%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.con{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
+    padding-bottom: 20px;
+    min-width: 500px;
+}
+.dis-container .art-content{
+    border: none;
+    min-height: 380px;
+    
+    position: relative;
+}
+.art-title{
+    font-size: 40px;
+    color: rgb(78, 78, 78);
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+.floor{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.author{
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    margin-right: 10px;
+}
+.floor span{
+    font-size: 15px;
+    border: tomato 1px solid;
+    padding: 5px;
+    color: rgb(117, 98, 97);
+}
+
+.content{
+    line-height: 1.8em;
+    
+}
+.dropdown{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.dropdown button{
+    height: 30px;
+    width: 70px;
+    border-radius: 3px;
+    float: right;
+}
+.dropdown button:hover{
+    background-color: coral;
+}
+.a-show{
+    color: white;
+    background-color: coral;
+}
+.fa-pencil-square-o{
+    font-size: 23px;
+    margin: 5px auto;
+}
+.dropdown-menu{
+    background-color: white;
+    float: right;
+    width: 100px;
+    box-shadow:1px 1px 5px rgb(202, 199, 199);
+    padding: 10px;
+}
+.dropdown-menu a{
+    display: block;
+    margin-bottom: 5px;
+}
+.dropdown-menu a:hover{
+    color: coral;
+}
+.art-date{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: rgb(100, 100, 100);
+}
+.img-container{
+    width: 100%;
+    margin: 15px 0;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.img-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+}
+.dis-container .recommend{
+    position: relative;
+    margin-top: 20px;
+    border-top: 1.5px solid rgb(172, 172, 172);
+    padding-top:15px;
+    min-height: 200px;
+}
+.rec-date{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: rgb(100, 100, 100);
+}
+.recommend .floor span{
+    border: rgb(76, 202, 97) 1px solid;
+}
+.recommend .author{
+    font-size: 25px;
+}
+.recommend text{
+    margin-bottom: 20px;
+}
+ .footer{
+ 
+        width:100%;
+        background-color:#1a1919 ;
+        color: #b3b3b3;
+        font-size: 15px;
+        padding: 20px 0 20px;
+        position: relative;
+        box-sizing: border-box;
+        }
+    .footer h3{
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    .footer-col-1{
+        flex-basis: 60%;
+        min-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .footer-container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+    }
+    .footer-row{
+        padding: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer hr{
+        margin: 15px 0;
+    }
+    .footer-bottom{
+        text-align: center;
+
+    }
+    header{
+    	position: fixed;
+        top: 0;
+        left:0 ;
+        z-index: 2;
+        width: 100%;
+        height: 110px;
+        padding: 25px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+        box-sizing: border-box;
+        background-color: rgba(248, 248, 248,0.9);
+       
+    }
+    header.sticky{
+        
+        background-color: white;
+        padding: 10px 100px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        box-sizing: border-box;
+    }
+
+    header .logo{
+        color: rgb(20, 20, 20);
+        font-weight: 700;
+        font-size: 2em;
+    }
+    header.sticky .logo{
+        color: black !important;
+    }
+
+    header .menu-bar{
+        width: 50%;
+        float: right;
+        box-sizing: border-box;
+        
+    }
+
+    header .menu-bar ul{
+        display: inline-flex;
+        float: right;
+        margin:auto 5px;
+    }
+    .menu-bar ul li{
+        border-left: 1px solid #fff;
+        padding: 15px 20px;
+        text-align: center;
+        cursor: pointer;
+        min-width: 90px;
+        position: relative;
+    }
+
+    .menu-bar ul li:hover{
+        background-color: rgb(71, 189, 91) ;
+    }
+    .menu-bar ul #cart-con:hover{
+        background-color: rgba(71, 189, 91, 0);
+        color:tomato;
+    }
+
+    .menu-bar ul li i{
+        font-size: 25px;
+        margin-right: 5px;
+    }
+    .menu-bar ul li ul{
+        position: absolute;
+        left: 0;
+        display: block;
+        margin-top: 18px;
+        width: 200px;
+        padding: 0;
+        background-color: rgb(71, 189, 91);
+    }
+    .menu-bar ul li ul li{
+        text-align: left;
+        border: none;
+        border-bottom: white 1px solid;
+        font-weight: 550;
+    }
+    .menu-bar ul li ul li:hover{
+        background-color: rgb(209, 102, 53);
+        color: white;
+    }
+    header .navigation{
+        position: relative;
+        display: flex;
+        
+    }
+    header .navigation li{
+        list-style: none;
+        margin-left: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(22, 22, 22);
+    }
+    header.sticky .navigation a{
+        color: black;
+    }
+
+    header .navigation li:hover{
+        color: rgb(74, 202, 49);
+        overflow: hidden;
+    }
+
+    .wrapper{
+        min-height: 150%;
+    }
+    #logout,#login{
+        outline: none;
+        background: none;
+        border: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    #logout:hover{
+        color: white;
+    }
+    .mycart{
+    	position:fixed;
+    	top:110px;
+    	right:10px;
+        z-index: 1000000;
+        float: right;
+        width: 35%;
+        margin-right: 20px;
+        min-width: 430px;
+        padding: 20px 10px;
+        background-color: white;
+ 
+        box-shadow: 0 0 4px rgb(175, 175, 175);
+    }
+    .name p{
+        position: relative;
+        line-height: 1.5em;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .carttitle{
+        color: rgb(114, 93, 87);
+        font-size: 30px;
+    }
+    .mycart th{
+        width: 100%;
+        height: 8px;
+        background-color: rgb(221, 110, 76);
+    }
+    .mycart td{
+        padding: 7px 7px;
+    }
+    #cartTable{
+        padding: 10px 0;
+    }
+    
+    .fa-trash{
+        font-size: 18px;
+        padding: auto 2px;
+    }
+    .sum-btn{
+        width:100%;
+        text-align: end; 
+        margin-bottom: 10px;
+    }
+
+    .sum-btn h3{
+        letter-spacing: 4px;
+        margin: 5px 0;
+        color: rgb(68, 68, 68);
+    }
+    .sum-btn h3::before{
+        content: "";
+        width: 70%;
+        height: 2px;
+        background-color: rgb(255, 124, 84);
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .gocart{
+        font-size: 20px;
+        background-color: rgb(255, 124, 84);
+        height: 50px;
+        width: 150px;
+        font-weight: 600;
+        color: rgb(20, 20, 20);
+    }
+    .gocart:hover{
+        background-color: rgb(226, 103, 66);
+        color: white;
+        cursor: pointer;
+    }
+    .gocart i{
+        margin-left: 2px;
+    }
+    #cart-con i{
+    	position: relative;
+    	font-size: 25px;
+    }
+    
+    /*不同處*/
+    #badge{
+    	position: absolute;
+    	top:5%;
+    	right:25%;
+    	background: tomato;
+    	border-radius: 50%;
+    	width: 20px;
+    	height: 20px;
+    	font-size:14px;
+    	box-sizing: border-box;
+    	color:white;
+    }
+
+    @media (max-width:1350px){
+        header{
+            padding: 25px 50px;
+        }
+        .menu-bar{
+            width: 50%;
+        }
+        .menu-bar ul{
+            margin: 10px 0;
+            width: 100%;
+        }
+        .menu-bar ul li{
+            width: 100%;
+
+        }
+        .sum-btn{
+        width: 100%;
+        text-align: end;
+        }
+        .sum-btn h3::before{
+        content: "";
+        width: 80%;
+        height: 2px;
+        background-color: rgb(255, 124, 84);
+        display: inline-block;
+        margin-right: 5px;
+        }
+    }
+
+    @media (max-width:1300px){
+        header{
+            padding: 25px 50px;
+        }
+        .menu-bar{
+            width: 55%;
+        }
+        .menu-bar ul{
+            margin: 10px 0;
+            width: 100%;
+        }
+        .menu-bar ul li{
+            width: 100%;
+
+        }
+    }
+
+@media (max-width:1250px){
+    #create-forum{
+        background-color: rgb(216, 216, 216);
+        color: rgb(63, 63, 63);
+        width: 100%;
+    }
+    .dis-container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 20px;
+        margin-bottom: 50px;
+    }
+    .con{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+        padding-bottom: 20px;
+        border-top: 1px black solid;
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        top: 13%;
+        right: 0;
+    }
+    .btn-class{
+        width: 100%;
+        text-align: center;
+    }
+    .btn-class button{
+        width: 50%;
+    }
+    .btn-sticky{
+        position: unset;
+    }
+    
+}
